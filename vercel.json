@@ -1,20 +1,14 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "api/analytics.py",
-      "use": "@vercel/python"
+  "functions": {
+    "api/analytics.py": {
+      "runtime": "python3.9",
+      "maxDuration": 10
     }
-  ],
+  },
   "routes": [
     {
       "src": "/api/analytics",
       "dest": "api/analytics.py"
     }
-  ],
-  "functions": {
-    "api/analytics.py": {
-      "runtime": "python3.9"
-    }
-  }
+  ]
 }
