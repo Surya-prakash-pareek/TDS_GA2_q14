@@ -16,6 +16,5 @@
     "api/analytics.py": {
       "runtime": "python3.9"
     }
-  },
-  "includeFiles": ["q-vercel-latency.json"]
+  }
 }
